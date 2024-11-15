@@ -75,19 +75,20 @@ export default function Home() {
       </header>
 
       {/* Main Content */}
-      <div className="flex flex-1 items-center justify-center relative z-10 w-4/5 mx-auto flex-col gap-y-10 md:gap-y-20 py-10">
+      <div className="flex flex-1 items-center justify-center relative z-10 w-4/5 mx-auto flex-col gap-y-10 md:gap-y-20 pb-10 lg:py-10">
         <div className="text-center flex flex-col gap-y-10 md:gap-y-20">
           <div>
             <h1 className={`text-white ${displayText ? "hidden" : "text-5xl md:text-8xl"}`}>百人一首JAPAN</h1>
           </div>
           <div>
-            <h2 className="font-bold mb-4 text-white text-2xl md:text-3xl">Enter the number from 1 to 100</h2>
+            <h2 className="font-bold mb-4 text-white text-lg md:text-3xl">Enter the number from 1 to 100</h2>
             <Input
               placeholder="Enter ID"
               value={inputId}
               onChange={handleChange}
               onKeyDown={handleKeyDown}
-              className="rounded w-24 mx-auto"
+              className="rounded w-24 mx-auto text-base"
+              style={{ fontSize: '16px' }} 
             />
             <button
               onClick={handleDisplay}
