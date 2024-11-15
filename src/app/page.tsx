@@ -112,7 +112,7 @@ export default function Home() {
               </>
             )}
           </div>
-          {error && <p className="text-3xl font-bold text-red-400">ERROR: {error}</p>}
+          {error && <p className="text-2xl md:text-3xl font-bold text-red-400">ERROR: {error}</p>}
         </div>
       </div>
 
