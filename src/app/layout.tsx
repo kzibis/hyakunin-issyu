@@ -12,6 +12,7 @@ const siteName= "百人一首JAPAN";
 const description = "Search the English translation of the Japanese poem 「hyakunin-issyu」into English.";
 const url = 'https://hyakunin-issyu.vercel.app/';
 const imgUrl = '/favicon.ico'
+const ogp = '/ogp.png'
 const keywords = ["百人一首", "hyakunin-issyu", "和歌", "Japanese", "English", "translation", "英訳"];
 
 export const metadata: Metadata = {
@@ -27,14 +28,14 @@ export const metadata: Metadata = {
     locale: 'ja_JP',
     type: 'website',
     images: [{
-      url: imgUrl
+      url: ogp
     }]
   },
   twitter: {
     card: 'summary_large_image',
     title: siteName,
     description,
-    images: imgUrl
+    images: ogp
     // site: '@サイト用アカウントのTwitterID',
     // creator: '@作者のTwitterID',
   },
