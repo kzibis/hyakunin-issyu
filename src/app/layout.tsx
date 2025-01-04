@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import {NextUIProvider} from "@nextui-org/react";
 import { Yuji_Syuku } from 'next/font/google'
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Yuji_Syuku({
   subsets: ['latin'],
