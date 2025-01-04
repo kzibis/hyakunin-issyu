@@ -61,7 +61,7 @@ export default function RootLayout({
         <NextUIProvider>
           {children}
         </NextUIProvider>
-        <Analytics></Analytics>
+        <Analytics/>
       </body>
     </html>
   );
